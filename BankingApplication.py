@@ -69,8 +69,8 @@ class Bank:
                     res=i.get("balance")
                     i["balance"]=res-withdraw_money
                     iswithdraw=False
-            else:
-                print("Invaild ACCOUNT NUMBER or HOLDER NAME ")
+               if iswithdraw:
+                    print("Invaild ACCOUNT NUMBER or HOLDER NAME ")
         print()
         print(Bank.account_holders)
         print()
@@ -217,7 +217,7 @@ Please enter a number between 1 to 6 :   '''))
 # Enter withdraw amount : 1000
 # Enter holder name : Mounika
 # Enter account number : 651407053810
-# Invaild ACCOUNT NUMBER or HOLDER NAME 
+ 
 
 # [{'Holder_name': 'Mounika', 'mobile': 789045673, 'Aadhar': 7056784356278, 'account_number': 651407053810, 'balance': 50000}, {'Holder_name': 'Bindu', 'mobile': 9087656743, 'Aadhar': 897654638965, 'account_number': 175779084752, 'balance': 500}, {'Holder_name': 'Maha Farjana', 'mobile': 7098656748, 'Aadhar': 890765235689, 'account_number': 414863694113, 'balance': 500}]
 
